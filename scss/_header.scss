@@ -12,10 +12,17 @@
         display: flex;
         grid-column: 5/span 4;
         justify-content: space-between;
+<<<<<<< HEAD
         
 
         a {
             text-decoration: none;
+=======
+
+        a {
+            text-decoration: none;
+            outline: none;
+>>>>>>> 0b856010051bc1e3f4a849aead838ce72f6c6bc5
             color: #446381;
         }
     }
@@ -24,5 +31,11 @@
     &-btn {
         grid-column: span 2;
         @include mainBtn;
+<<<<<<< HEAD
     }
+=======
+
+    }
+
+>>>>>>> 0b856010051bc1e3f4a849aead838ce72f6c6bc5
 }
