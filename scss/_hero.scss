@@ -1,0 +1,121 @@
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 54px;
+    gap: 30px;
+    background-image: url("../assets/Group.svg");
+    background-repeat: no-repeat;
+    background-position: 300px 450px;
+
+    .head {
+        display: flex;
+        align-items: center;
+
+        h4 {
+            margin-right: 2px;
+            color: $secondary-black;
+            font-size: 23px;
+            font-weight: 500;
+        }
+
+        img {
+            margin-left: 29px;
+        }
+    }
+
+    .slogan {
+        font-size: 58px;
+        line-height: 75px;
+
+        h1:first-child {
+            color: $secondary-brown;
+        }
+
+        h1:last-child {
+            color: $secondary-black;
+        }
+    }
+
+    &-txt {
+        & *+* {
+            margin-top: 30px;
+        }
+
+        p {
+            color: #826F8C;
+            font-size: 18px;
+            font-weight: 300px;
+            line-height: 29px;
+        }
+
+        button {
+            @include mainBtn;
+        }
+    }
+
+    &-img {
+        position: relative;
+
+        .card-vr {
+            background-color: rgba(255, 255, 255, 0.4);
+            position: absolute;
+            left: -60px;
+
+            max-width: 211px;
+            max-height: 95px;
+            border-radius: 10px;
+            font-size: 10px;
+            display: flex;
+            padding: 10px;
+            box-shadow: 5px 5px 5px rgb(246, 195, 188);
+
+            & *+* {
+                margin-top: 5px;
+            }
+
+            span {
+                font-size: 8px;
+            }
+
+            p {
+                color: $secondary-brown;
+            }
+
+            h5 {
+                color: $secondary-black;
+            }
+        }
+
+        .card-joystick {
+            background-color: rgba(255, 255, 255, 0.4);
+            position: absolute;
+            right: 60px;
+            margin-top: 600px;
+
+            max-width: 211px;
+            max-height: 95px;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: 500;
+            display: flex;
+            padding: 10px;
+            box-shadow: 5px 5px 5px rgb(246, 195, 188);
+
+            & *+* {
+                margin-top: 5px;
+            }
+
+            span {
+                font-size: 8px;
+            }
+
+            p {
+                color: $secondary-brown;
+            }
+
+            h5 {
+                color: $secondary-black;
+            }
+        }
+    }
+}

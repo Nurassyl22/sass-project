@@ -1,0 +1,50 @@
+@mixin mainBtn {
+    font-size: 18px;
+    font-family: inherit;
+    color: white;
+    background: linear-gradient(#4499d9 17.46%, #7367be 87.77%);
+    border: none;
+    border-radius: 100px;
+    padding: 13px 14px;
+}
+
+$main-black: #355070;
+$main-dark-brown: #6d597a;
+$main-brown: #b56576;
+$main-light: #e56b6f;
+$main-yellow: #eacc8b;
+$main-bg: #ffe6d6;
+$secondary-black: #446381;
+$secondary-brown: #eb8382;
+$third-brown: #FBDACF;  
+
+@import "./header";
+@import "./hero";
+@import "./message";
+@import "./plans";
+@import "./footer";
+
+*,
+html,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 1200px;
+    margin-inline: auto;
+    background-color: $main-bg;
+    font-family: "Josefin Sans", sans-serif;
+
+    .bck-ground{
+        background-image: url("../assets/image 3.svg");
+        background-repeat: no-repeat;
+        padding: 50px ;
+    }
+}
+
+li {
+    list-style-type: none;
+}

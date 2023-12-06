@@ -1,0 +1,55 @@
+.message {
+    & * + * {
+        margin-top: 30px;
+    }
+
+    p {
+        color: #826f8c;
+        font-size: 18px;
+        font-weight: 300px;
+        line-height: 29px;
+    }
+
+    button {
+        @include mainBtn;
+        margin-right: 60px;
+    }
+
+    h4 {
+        margin-right: 2px;
+        color: $secondary-black;
+        font-size: 23px;
+        font-weight: 500;
+    }
+
+    h1 {
+        font-size: 68px;
+        line-height: 75px; /* 110.294% */
+        color: $secondary-brown;
+        width: 586px;
+    }
+
+    .container-1 {
+        background-image: url("../assets/borderboy.png");
+        background-repeat: no-repeat;
+        background-position: 700px -300px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 200px;
+        gap: 30px;
+
+        img {
+            margin-right: 29px;
+        }
+    }
+
+    .container-2 {
+        background-image: url("../assets/image 14.png");
+        background-repeat: no-repeat;
+        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 100px;
+        gap: 30px;
+    }
+}
